@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%extends 'base.html'%}
+    {%load static%}
+    {%block 'titulo'%}Meu Possante{%endblock%}
+</head>
+{%block 'conteudo'%}
+<body style="background-color: #252525;">
+<div style="background-color: #8F1622; width: 100%; height: 10rem; color: #ffffff; display: flex; flex-direction: row; align-items: center;">
+    <a style="padding-left:3rem; padding-right:3rem;text-decoration: none;color:#ffffff; font-size:200%" href="/">Meu Possante</a>
+    <a style="text-decoration: none; color:#ffffff;padding-right:3rem;" aria-current="page" href="/">Home</a>
+    <a style="text-decoration: none; color:#ffffff" aria-current="page" href="/documentacao">Documentação</a>
+</div>
+<div style="color:#ffffff; padding-left:3rem; padding-top: 3rem;">
+    <a href="https://docs.google.com/document/d/1B5Aww8mVYb10FBRaZJSsZHMkPfyjTiiJXtCKOnFnxcU">Visualize a documentação do projeto no Google Docs</a>
+    <p>Diagramas utilizados no desenvolvimento do projeto:</p>
+    <p>Diagrama de casos de uso:</p>
+    <img style="padding-bottom: 3rem;width: 700px; height:500px" src="{%static 'media/Diagrama_de_casos_de_uso.png'%}" alt="Diagrama de casos de uso">
+    <p>Diagrama de atividades:</p>
+    <img style="padding-bottom: 3rem;width: 1200px; height:500px" src="{%static 'media/Diagrama_de_atividades.png'%}" alt="Diagrama atividades">
+    <p>Diagrama de classes:</p>
+    <img  style="padding-bottom: 3rem;width: 1050px; height:700px"src="{%static 'media/Diagrama_de_classes.jpg'%}" alt="Diagrama de classes">
+</div>
+</body>
+{%endblock%}
+</html>

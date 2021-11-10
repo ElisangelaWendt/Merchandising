@@ -5,12 +5,17 @@
     {%block 'titulo'%}Meu Possante{%endblock%}
 </head>
 {%block 'conteudo'%}
-<body>
+<body style="background-color: #252525;">
 <div style="background-color: #8F1622; width: 100%; height: 10rem; color: #ffffff; display: flex; flex-direction: row; align-items: center;">
-<h1 style="padding-left:3rem; padding-right:3rem;">Meu Possante</h1>
-<li className="nav-item">
-    <a style="text-decoration: none; color:#ffffff" aria-current="page" href="/">Home</a>
-  </li>
+    <a style="padding-left:3rem; padding-right:3rem;text-decoration: none;color:#ffffff; font-size:200%" href="/">Meu Possante</a>
+    <a style="text-decoration: none; color:#ffffff;padding-right:3rem;" aria-current="page" href="/">Home</a>
+    <a style="text-decoration: none; color:#ffffff" aria-current="page" href="/documentacao">Documentação</a>
+</div>
+<div style="color:#ffffff; padding-left:3rem; padding-top: 3rem">
+    <p style="font-size:125%">Está precisando de um site para gerenciar seus veículos?</p>
+    <p>Com o Meu Possante você não só gerencia seus veículos como também pode ver o histórico de serviços que foram feitos em cada deles, pode adicionar fotos, 
+        e receber avisos de quando é necessário realizar algum tipo de serviço, como por exemplo troca de óleo.
+    </p>
 </div>
 </body>
 {%endblock%}
