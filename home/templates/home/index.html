@@ -2,20 +2,77 @@
 <html lang="en">
 <head>
     {%extends 'base.html'%}
+    {%load static%}
     {%block 'titulo'%}Meu Possante{%endblock%}
 </head>
 {%block 'conteudo'%}
 <body style="background-color: #252525;">
-<div style="background-color: #8F1622; width: 100%; height: 10rem; color: #ffffff; display: flex; flex-direction: row; align-items: center;">
-    <a style="padding-left:3rem; padding-right:3rem;text-decoration: none;color:#ffffff; font-size:200%" href="/">Meu Possante</a>
-    <a style="text-decoration: none; color:#ffffff;padding-right:3rem;" aria-current="page" href="/">Home</a>
-    <a style="text-decoration: none; color:#ffffff" aria-current="page" href="/documentacao">Documentação</a>
-</div>
-<div style="color:#ffffff; padding-left:3rem; padding-top: 3rem">
-    <p style="font-size:125%">Está precisando de um site para gerenciar seus veículos?</p>
-    <p>Com o Meu Possante você não só gerencia seus veículos como também pode ver o histórico de serviços que foram feitos em cada deles, pode adicionar fotos, 
+<div style="color:#ffffff; padding-left:3rem; padding-top: 3rem; padding-right:3rem;">
+    <h3 style="padding-bottom: 0.5em;">Está precisando de um site para gerenciar seus veículos?</h3>
+    <p style="padding-bottom: 1em;">Com o Meu Possante você não só gerencia seus veículos como também pode ver o
+        histórico de serviços que foram feitos em cada deles, pode adicionar fotos,
         e receber avisos de quando é necessário realizar algum tipo de serviço, como por exemplo troca de óleo.
     </p>
+    <h5 style="padding-bottom: 0.5em;">Meu possante conta com as principais funcionalidades: </h5>
+    <ul>
+        <li>Cadastro ilimitado de veículos;</li>
+        <li>Verificar a autonomia de consumo dos veículos;</li>
+        <li>Controle de gastos seperados por veículos;</li>
+        <li>Gerenciamento e histórico de serviços realizados;</li>
+        <li>Sistema de avisos para a realização de manutenção preventiva;</li>
+    </ul>
+    <h4 style="padding-top: 1em; padding-bottom: 0.5em;">Confira algumas da telas WEB:</h4>
+    <div style="margin-left: 9em">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="width: 1000px;border: solid 2px white; border-radius: 2px">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{%static 'media/home.png'%}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tela inicial</h5>
+                    <p>Está é a tela inicial do Meu Possante na plataforma.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{%static 'media/telaInfo.png'%}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tela de informações dos veículos</h5>
+                    <p>Nesta tela é possível visualizar todas as informações de um determinado veículo.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{%static 'media/servicos.png'%}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tela de serviços</h5>
+                    <p>Aqui é possível visualizar todos os serviços realizados em determinado veículo.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+        </div>
+</div>
+<div class="text-center" style="color: #ffffff; padding-top: 1rem;">
+    <h4 style="padding-bottom: 0.5em;">Futuramente disponível na Web e nas plataformas:</h4>
+    <img style="width: 150px; margin-right: 0.5em" src="{%static 'media/googlePLay.png'%}"
+         alt="Disponível na google play">
+    <img style="width: 150px;" src="{%static 'media/appStore.png'%}" alt="Disponível na app store">
 </div>
 </body>
 {%endblock%}
