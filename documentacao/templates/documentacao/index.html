@@ -7,15 +7,63 @@
 </head>
 {%block 'conteudo'%}
 <body style="background-color: #252525;">
-<div style="color:#ffffff; padding-left:3rem; padding-top: 3rem;">
-    <a href="https://docs.google.com/document/d/1B5Aww8mVYb10FBRaZJSsZHMkPfyjTiiJXtCKOnFnxcU">Visualize a documentação do projeto no Google Docs</a>
+<div style="color:#ffffff; padding-left:3rem; padding-top: 3rem; display: flex; flex-direction: column; padding-bottom: 3rem;align-items: center;">
+    <p style="font-size:26px">Documentação</p>
+    <a style="color:white;" href="https://docs.google.com/document/d/1B5Aww8mVYb10FBRaZJSsZHMkPfyjTiiJXtCKOnFnxcU">👉🏻Visualize a documentação do projeto no Google Docs👈🏻</a>
+    <a style="color:white;" href="https://www.figma.com/file/HyoCucjQX6mpxJiGMILoSK/Meu-possante?node-id=0%3A1">👉🏻Protótipo👈🏻</a>
     <p>Diagramas utilizados no desenvolvimento do projeto:</p>
-    <p>Diagrama de casos de uso:</p>
-    <img style="padding-bottom: 3rem;width: 700px; height:500px" src="{%static 'media/Diagrama_de_casos_de_uso.png'%}" alt="Diagrama de casos de uso">
-    <p>Diagrama de atividades:</p>
-    <img style="padding-bottom: 3rem;width: 1200px; height:500px" src="{%static 'media/Diagrama_de_atividades.png'%}" alt="Diagrama atividades">
-    <p>Diagrama de classes:</p>
-    <img  style="padding-bottom: 3rem;width: 1050px; height:700px"src="{%static 'media/Diagrama_de_classes.jpg'%}" alt="Diagrama de classes">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="width: 1000px;border: solid 2px white; border-radius: 2px;">
+        <div class="carousel-indicators">
+            <button style="background-color: black;"type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button style="color:black; background-color: black;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button style="color:black; background-color: black;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            <button style="color:black; background-color: black;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{%static 'media/Diagrama_de_casos_de_uso.png'%}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: black;">Diagrama de casos de uso</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{%static 'media/Diagrama_de_atividades.png'%}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: black;">Diagrama de atividades</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{%static 'media/Diagrama_de_classes.jpg'%}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: black;">Diagrama de classes</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{%static 'media/DER.png'%}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: black;">DER</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+            <span style="background-color: gray;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+            <span style="background-color: gray;" class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<div style="display: flex; justify-content:space-between">
+    <a href="https://docs.google.com/document/d/18SQ1xteB92wyA2mbCfgps7nnwcKiIN3ySalIWBAIuIs/edit">Termo de consentimento</a>
+    <a href="https://docs.google.com/document/d/1B4Y-bKkm9S82AmZ6DGDi-4tyI3ym-7HE/edit">Termo de politica e privacidade</a>
 </div>
 </body>
 {%endblock%}
